@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.6"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title> Home </title>
+
+<style>
+
+  
+/* Navigation bar */
+
+
+.customNav {
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  background-color: white !important;
+  z-index: 10;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav {
+  background-color: white;
+  margin-left: auto;
+  margin-right: 1 !important;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px !important;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand img {
+  padding-right: 50px;
+  width: 200px;
+}
+.nav-item {
+  margin: 15px 15px !important;;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px !important;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-menu {
+  background-size: cover;
+  color: #16181b;
+  background-color: white;
+  font-size: 30px !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: underline;
+    background-color: white;
+    font-size: 30px !important;
+}
+
+
+.customNav a {
+  color: #647274 !important;
+}
+
+
+img.about_mobile {
+position: absolute;
+width: 310px;
+height: 684px;
+left: 39px;
+top: 150px;
+}
+
+/* Style buttons */
+.btn_mobile {
+  background-color:  #BD3147;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 24px;
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 300px;
+height: 46px;
+left: 65px;
+top: 871px;
+
+
+border-radius: 32px;
+}
+
+/* Darker background on mouse-over */
+.btn_mobile:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.skills_mobile {
+  position: absolute;
+  width: 200px;
+  height: 882px;
+  left: 105px;
+  top: 1019px;
+
+}
+
+img.footer_mobile {
+
+position: absolute;
+width: 335px;
+height: 85px;
+left: 20px;
+top: 1957px;
+
+}
+
+
+
+
+
+
+  
+ 
+
+
+img.about {
+
+position: absolute;
+width: 1194px;
+height: 512px;
+left: 123px;
+top: 211px;
+opacity: 70%
+}
+
+
+/* Style buttons */
+.btn {
+  background-color:  #BD3147;
+  border: none;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 24px;
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 406px;
+height: 78px;
+left: 517px;
+top: 824px;
+
+border-radius: 32px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.skills {
+position: absolute;
+width: 1126px;
+height: 461px;
+left: 191px;
+top: 1003px;
+opacity: 70%
+}
+
+footer {
+position: absolute;
+width: 471px;
+height: 157px;
+left: 513px;
+top: 1651px;
+opacity: 70%
+
+}
+
+@media screen and (max-width: 800px) {
+
+div.pc { 
+  display: none;
+ }
+
+img.skills {
+  display: none;
+}
+
+}
+
+@media screen and (min-width: 800px) {
+div.iphone { 
+  display: none;
+ }
+
+}
+
+</style>
+
+   
+     </style>
+    
+     </head>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+      <a class="navbar-brand" href="#"><img src="logo_iphone.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Mutt Love Rescue</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://miki-marti.github.io/ux_ui_homework_20/case_studies/plate_theory.html">Plate Theory</a>
+            </div>
+        </ul>
+      </div>
+    </nav>
+
+    </header>
+  
+    
+
+    
+  </div>
+<section>
+  <div class="iphone">
+  <img class="about_mobile" src="about_mobile.png">
+   <!-- Add icon library -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+   <!-- Auto width -->
+   <button class="btn_mobile"><i class="fa fa-download"></i> Download Resume</button>
+
+   <img class="skills_mobile" src="skills_mobile.png">
+
+   <img class="footer_mobile" src="footer_mobile.png">
+
+   </div>
+
+
+  </div>
+  <div class="pc">
+  <div>
+    <img class="about" src="about.png">
+  </div>
+
+  <div>
+    <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- Auto width -->
+  <button class="btn"><i class="fa fa-download"></i> Download Resume</button>
+  </div>
+
+  </section>
+
+<section>
+  <div>
+    <img class="skills" src="skills.png">
+    </div>
+    
+</section>
+  
+
+</section>
+</div>
+
+<footer>
+  <div>
+    <img class= "footer" src="footer.png">
+  </div>
+</footer>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+$("img.Logo_original").hover(function(){
+$(this).css("opacity", "70%");
+}, function(){
+$(this).css("opacity", "200%");
+});
+
+$("img.about").hover(function(){
+$(this).css("opacity", "70%");
+}, function(){
+$(this).css("opacity", "200%");
+});
+
+$("img.skills").hover(function(){
+$(this).css("opacity", "70%");
+}, function(){
+$(this).css("opacity", "200%");
+});
+
+$("img.about").hover(function(){
+$(this).css("opacity", "70%");
+}, function(){
+$(this).css("opacity", "150%");
+});
+
+$("img.footer").hover(function(){
+$(this).css("opacity", "70%");
+}, function(){
+$(this).css("opacity", "200%");
+});
+
+
+
+
+</script>
+
+</body>
+
+
+</html>

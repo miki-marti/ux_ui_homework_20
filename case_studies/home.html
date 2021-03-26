@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.6"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title> Home </title>
+
+<style>
+
+  
+/* Navigation bar */
+
+
+.customNav {
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  background-color: white !important;
+  z-index: 10;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav {
+  background-color: white;
+  margin-left: auto;
+  margin-right: 1 !important;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px !important;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+.navbar-brand img {
+  padding-right: 50px;
+  width: 200px;
+}
+.nav-item {
+  margin: 15px 15px !important;;
+
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px !important;
+line-height: 37px;
+
+color: #2D4144;
+
+text-shadow: 0px 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.dropdown-menu {
+  background-size: cover;
+  color: #16181b;
+  background-color: white;
+  font-size: 30px !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: underline;
+    background-color: white;
+    font-size: 30px !important;
+}
+
+
+.customNav a {
+  color: #647274 !important;
+}
+
+
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+img.intro_mobile {
+position: absolute;
+width: 336px;
+height: 421px;
+left: 19px;
+top: 187px;
+
+}
+
+.mobile_btn {
+  background-color:  #BD3147;
+  border: none;
+  padding: 20px 70px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 2430px;
+
+
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 300px;
+height: 46px;
+left: 34px;
+top: 647px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+/* Darker background on mouse-over */
+.mobile_btn:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.mobile_mutt_love {
+position: absolute;
+width: 356px;
+height: 193px;
+left: 9px;
+top: 842px;
+}
+
+.mobile_btn2 {
+  background-color:  #BD3147;
+  border: none;
+  padding: 20px 35px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 24px;
+
+
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 244px;
+height: 46px;
+left: 65px;
+top: 1074px;
+bottom: 986px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+/* Darker background on mouse-over */
+.mobile_btn2:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+
+img.mobile_plate_theory {
+position: absolute;
+width: 356px;
+height: 193px;
+left: 9px;
+top: 1243px;
+}
+
+.mobile_btn3 {
+  background-color:  #BD3147;
+  border: none;
+  padding: 20px 35px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 25px;
+line-height: 24px;
+
+
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 244px;
+height: 46px;
+left: 65px;
+top: 1475px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+/* Darker background on mouse-over */
+.mobile_btn3:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.footer_mobile {
+position: absolute;
+width: 335px;
+height: 78px;
+left: 17px;
+top: 1586px;
+
+}
+
+
+img.intro {
+  position: absolute;
+width: 1315px;
+height: 520px;
+left: 91px;
+top: 223px;
+opacity: 70%;
+}
+
+
+/* Style buttons */
+
+
+  .btn {
+  background-color:  #BD3147;
+  border: none;
+  padding: 27px 100px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 30px; 
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 406px;
+height: 78px;
+left: 553px;
+top: 796px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+
+.btn:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+ 
+
+
+img.mutt_love {
+position: absolute;
+width: 1320px;
+height: 680px;
+left: 60px;
+top: 1008px;
+opacity: 80%;
+
+}
+
+/* Style buttons */
+.btn2 {
+  background-color:  #BD3147;
+  border: none;
+  padding: 27px 60px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 30px;
+
+
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 406px;
+height: 78px;
+left: 572px;
+top: 1780px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+/* Darker background on mouse-over */
+.btn2:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+
+img.plate_theory {
+position: absolute;
+width: 1320px;
+height: 680px;
+left: 60px;
+top: 2010px;
+opacity: 80%;
+}
+
+.btn3 {
+  background-color:  #BD3147;
+  border: none;
+  padding: 27px 60px;
+  cursor: pointer;
+  font-family: Lobster;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 30px;
+
+
+/* identical to box height, or 60% */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.002em;
+
+color: rgba(255, 255, 255, 0.7);
+
+
+position: absolute;
+width: 406px;
+height: 78px;
+left: 546px;
+top: 2824px;
+
+background: #BD3147;
+box-shadow: 0px 19px 40px rgba(0, 0, 0, 0.2);
+border-radius: 32px;
+
+}
+
+/* Darker background on mouse-over */
+.btn3:hover {
+  background-color: #BD3147;
+  color: white;
+  border-radius: 32px;
+}
+
+img.footer {
+  position: absolute;
+width: 471px;
+height: 157px;
+left: 540px;
+top: 3012px;
+opacity: 70%;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  div.pc { 
+    display: none;
+   }
+
+   img.intro {
+     display: none;
+   }
+
+   img.mutt_love {
+     display: none;
+   }
+
+   img.plate_theory {
+     display: none;
+   }
+
+   .btn {
+    display: none;
+  }
+
+  .btn2 {
+    display: none;
+  }
+
+  .btn3 {
+    display: none;
+  }
+
+  
+  
+
+
+
+
+}
+@media screen and (min-width: 800px) {
+  div.iphone { 
+    display: none;
+   }
+
+   img.intro_mobile {
+     display: none;
+   }
+
+  img.mobile_mutt_love {
+    display: none;
+  }
+
+  img.mobile_plate_theory {
+    display: none;
+  }
+
+  button.mobile_btn {
+    display: none;
+  }
+
+  button.mobile_btn2 {
+    display: none;
+  }
+
+  button.mobile_btn3 {
+    display: none;
+  }
+
+  
+
+}
+
+
+
+</style>
+
+     
+</head>
+
+<body>
+
+<header>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light customNav">
+    <a class="navbar-brand" href="#"><img src="logo_iphone.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href=https://miki-marti.github.io/ux_ui_homework_19-/withanimation/home.html#>Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://miki-marti.github.io/ux_ui_homework_19-/withanimation/about.html#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Work</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Mutt Love Rescue</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="https://miki-marti.github.io/ux_ui_homework_20/case_studies/plate_theory.html">Plate Theory</a>
+          </div>
+      </ul>
+    </div>
+  </nav>
+
+
+</header>
+
+<section>
+  <div class="iphone">
+<div>
+  <img class="intro_mobile" src="intro_mobile.png">
+
+   
+</div>    
+
+<div>
+  
+<button class="mobile_btn"><i class="get in touch"></i> Get in Touch</button>
+</div>
+</section>
+
+<section>
+<div>
+    <img class= "mobile_mutt_love" src="mutt_lover_cover_iphone.png">
+    <button class="mobile_btn2"><i class="read_case_study"></i> Read Case Study</button>
+    </div>
+
+   
+  <div>
+    <img class= "mobile_plate_theory" src="plate_theory_cover_iphone.png">
+    <button class="mobile_btn3"><i class="read_case_study"></i> Read Case Study</button>
+  </div>
+
+  <div class= "iphone">
+    <img class="footer_mobile" src="footer_mobile.png">
+  </div>
+
+  
+
+</section>
+
+</div>
+
+
+
+<div class= "pc">
+  
+<div class="block"> </div>
+    
+  <section>
+  
+    <div>
+      <img class="intro" src="intro.png">
+    </div>
+  
+    <div>
+     
+      <button class="btn"><i class="get in touch"></i> Get in Touch</button>
+      </div>
+    </div>
+  
+  </section>
+  
+  <section>
+    <div>
+      <img class= "mutt_love" src="mutt_love_cover.png">
+      <button class="btn2"><i class="read_case_study"></i> Read Case Study</button>
+      </div>
+    </div>
+     
+    </div>
+  
+      <img class= "plate_theory" src="plate_theory_cover.png">
+      <button class="btn3"><i class="read_case_study"></i> Read Case Study</button>
+      
+     
+  
+    </div>
+
+    <div class= "pc">
+      <img class="footer" src="footer.png">
+    </div>
+  </section>
+
+  <div class="preloader">
+    <img src="preloader.svg">
+  </div>
+  
+    
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+
+
+
+$("img.Logo_original").hover(function(){
+  $(this).css("opacity", "70%");
+  }, function(){
+  $(this).css("opacity", "200%");
+});
+
+$("img.intro").hover(function(){
+  $(this).css("opacity", "70%");
+  }, function(){
+  $(this).css("opacity", "200%");
+});
+
+$("img.mutt_love").hover(function(){
+  $(this).css("opacity", "70%");
+  }, function(){
+  $(this).css("opacity", "200%");
+});
+
+$("img.plate_theory").hover(function(){
+  $(this).css("opacity", "70%");
+  }, function(){
+  $(this).css("opacity", "200%");
+});
+
+$("img.footer").hover(function(){
+  $(this).css("opacity", "70%");
+  }, function(){
+  $(this).css("opacity", "200%");
+});
+
+function fade() {
+$('.preloader').fadeOut("fast");
+}
+setTimeout(fade, 1000);
+
+
+    
+
+  </script>
+    
+</body>
+
+<footer>
+   
+</footer>
+
+</html>
